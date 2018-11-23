@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>テストページ</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="./throw.js"></script>
+        <script src="./throwForAWS.js"></script>
+        <script src="./throwForAWSProd.js"></script>
+
+
+    </head>
+    <body>
+        <h2>イーブイゲットチャレンジ</h2>
+        &emsp;&emsp;<img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Pok%C3%A9mon_Eevee_art.png" alt="イーブイ" width="150">
+        <form method="post">
+            <p>ボール選択<br>
+                &emsp;<input type="radio" id="number" name="q1" value="20" checked> モンスターボール<br>
+                &emsp;<input type="radio" id="number" name="q1" value="50"> スーパーボール<br>
+                &emsp;<input type="radio" id="number" name="q1" value="80"> ハイパーボール<br>
+                &emsp;<input type="radio" id="number" name="q1" value="100"> マスターボール<br>
+            <input type="button" id="button1" value="投げる">
+        </form>
+        <h3><div id="message1"></div></h3>
+        <input type="button" id="button2" value="投げるforAWS">
+        <h3><div id="message2"></div></h3>
+        <input type="button" id="button3" value="投げるforAWS_本番">
+        <h3><div id="message3"></div></h3>
+    </body>
+</html>

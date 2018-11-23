@@ -1,0 +1,5 @@
+aws lambda add-permission    --function-name "arn:aws:lambda:ap-northeast-1:197242337356:function:EeveeGet:${stageVariables.alias}"    --source-arn "arn:aws:execute-api:ap-northeast-1:197242337356:liuncvp3x8/*/POST/eeveeget"    --principal apigateway.amazonaws.com    --statement-id af03ebba-a0db-417a-ba1b-931202fef946    --action lambda:InvokeFunction
+
+aws lambda add-permission    --function-name "arn:aws:lambda:ap-northeast-1:197242337356:function:EeveeGet:dev"    --source-arn "arn:aws:execute-api:ap-northeast-1:197242337356:liuncvp3x8/*/POST/eeveeget"    --principal apigateway.amazonaws.com    --statement-id af03ebba-a0db-417a-ba1b-931202fef946    --action lambda:InvokeFunction
+
+aws lambda add-permission    --function-name "arn:aws:lambda:ap-northeast-1:197242337356:function:EeveeGet:prod"    --source-arn "arn:aws:execute-api:ap-northeast-1:197242337356:liuncvp3x8/*/POST/eeveeget"    --principal apigateway.amazonaws.com    --statement-id af03ebba-a0db-417a-ba1b-931202fef946    --action lambda:InvokeFunction

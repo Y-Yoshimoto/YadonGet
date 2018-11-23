@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  YadonGet:
+    Properties:
+      CodeUri: s3://yadonget/c81b2594b782ad42ea8ffeed2b04f730
+      Description: ''
+      Events:
+        Api1:
+          Properties:
+            Method: POST
+            Path: /yadonget
+          Type: Api
+      Handler: lambda_function.lambda_handler
+      MemorySize: 128
+      Role: arn:aws:iam::197242337356:role/service-role/Eevee
+      Runtime: python2.7
+      Timeout: 3
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
