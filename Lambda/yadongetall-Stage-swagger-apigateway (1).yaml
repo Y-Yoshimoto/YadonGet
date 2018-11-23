@@ -1,0 +1,23 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: "yadongetall"
+host: "x47dymmq3b.execute-api.ap-northeast-1.amazonaws.com"
+basePath: "/Stage"
+schemes:
+- "https"
+paths:
+  /yadonget:
+    post:
+      responses:
+        200:
+          description: "200 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:ap-northeast-1:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-northeast-1:197242337356:function:yadongetall-YadonGet-1GJCNCS1BX4L8/invocations"
+        responses:
+          default:
+            statusCode: "200"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        type: "aws"
